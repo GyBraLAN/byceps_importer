@@ -1,0 +1,21 @@
+{% include '_head.twig' %}
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.3/datatables.min.css"/>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="{{ url('home') }}js/{{ table }}_table.js"></script>
+{% include '_nav.twig' %}
+<div class="container">
+	<table id="dataTable" class="display" style="width:100%">
+		<thead>
+            <tr>
+                <th>ID</th>
+                <th>Area</th>
+                <th>X</th>
+                <th>Y</th>
+                <th>Category</th>
+                <th>Label</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+	</table>
+</div>
+{% include '_footer.twig' %}
