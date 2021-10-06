@@ -105,11 +105,11 @@ class SeatsImporterController extends AbstractController
                 ])))
                     continue;
                 // check if there is allready a seat with this label
-                if (! is_null($repo->findOneBy([
-                    'label' => $new_seat->getLabel(),
-                    'area' => $new_seat->getArea()
-                ])))
-                    continue;
+                // if (! is_null($repo->findOneBy([
+                //     'label' => $new_seat->getLabel(),
+                //     'area' => $new_seat->getArea()
+                // ])))
+                //     continue;
 
                 $entityManager->persist($new_seat);
                 $entityManager->flush();
