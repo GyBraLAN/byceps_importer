@@ -15,9 +15,9 @@ class UserDetails
     /**
      * @var string|null
      *
-     * @ORM\Column(name="first_names", type="text", nullable=true)
+     * @ORM\Column(name="first_name", type="text", nullable=true)
      */
-    private $firstNames;
+    private $firstName;
 
     /**
      * @var string|null

@@ -39,9 +39,9 @@ class ShopOrders
     /**
      * @var string
      *
-     * @ORM\Column(name="first_names", type="text", nullable=false)
+     * @ORM\Column(name="first_name", type="text", nullable=false)
      */
-    private $firstNames;
+    private $firstName;
 
     /**
      * @var string
